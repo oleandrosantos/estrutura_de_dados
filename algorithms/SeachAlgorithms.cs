@@ -2,7 +2,7 @@ using System;
 
 namespace algorithms
 {
-  public class SeachAlgorithms
+  public static class SeachAlgorithms
   {
     public static int? BinaryNumberSeach(int[] listaNumeros, int numero)
     {

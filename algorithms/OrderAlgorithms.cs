@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace algorithms
 {
-  public class OrderAlgorithms
+  public static class OrderAlgorithms
   {
     public static int[] SelectionSort(List<int> arr)
     {
@@ -33,5 +33,6 @@ namespace algorithms
       }
       return smallestIndex;
     }
+
   }
 }
