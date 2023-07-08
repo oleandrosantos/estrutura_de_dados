@@ -12,14 +12,14 @@ namespace algorithms
       var newArr = new int[arr.Count];
       for (int i = 0; i < newArr.Length; i++)
       {
-        var smallest = FindSmallest(arr);
-        newArr[i] = arr[smallest];
-        arr.RemoveAt(smallest);
+        var indexSmallest = FindIndexSmallest(arr);
+        newArr[i] = arr[indexSmallest];
+        arr.RemoveAt(indexSmallest);
       }
       return newArr;
     }
 
-    private static int FindSmallest(List<int> arr)
+    private static int FindIndexSmallest(List<int> arr)
     {
       var smallest = arr[0];
       var smallestIndex = 0;
